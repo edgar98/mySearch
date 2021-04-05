@@ -10,8 +10,8 @@ functionality for web-crawlers.
 
 To run spider:
 ```bash 
-cd "1. Crawler"
-scrapy crawl quotes*
+cd "task1_rawler"
+scrapy crawl spider-task
 ```
 ***
 
@@ -52,9 +52,21 @@ python main.py
 
 ## Task 4 ##
 
+* [x] Calculate tf for terms
+* [x] Calculate idf
+* [x] Calculate tf-idf
+* [x] Write results to file in format:
+   * \<term> \<idf> \<tf-idf>\n
+  
+To run:
+```bash
+python main.py
+```
 ***
 
 ## Task 5 ##
+* [x] Implement fully operational search engine with written index
+
 ```bash
 python manage.py runserver
 ```

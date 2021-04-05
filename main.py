@@ -5,9 +5,9 @@ from task3_index.index_search import BoolSearch
 from task4_tf_idf.tf_idf import TfIdfIndex
 
 RUN_TASKS = [
-    # 2,
-    # 3,
-    # 4,
+    2,
+    3,
+    4,
     5,
 ]
 
