@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="{% url 'search:search' %}" method="get">
+        <label for="pole">Input query</label>
+        <input type="text" name="query" id="pole">
+        <input type="submit" value="Search">
+    </form>
+    {% if results %}
+        {% for result in results %}
+            <div>
+                <a href="{% url 'search:results' string=result %}" target=_blanc>{{ result }}</a>
+            </div>
+        {% endfor %}
+    {% else %}
+        <div>{{ message }}</div>
+    {% endif %}
+</body>
+</html>
